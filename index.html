@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kumbhar Enterprise Ltd.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-brand">
+      <img src="https://i.ibb.co/1fPKmMY3/Logo.jpg" alt="Logo" style="height: 70px;">
+      <button class="menu-toggle" id="menu-toggle">
+        ☰
+      </button>
+    </div>
+    <nav class="navbar-menu" id="navbar-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="logo">Kumbhar Enterprise</h1>   
+      <h1>Delivering Excellence in Every Package</h1>
+      <p>Premium Food Packaging for Modern Businesses</p>
+      <a href="#products" class="btn">Explore Products</a>
+    </div>
+  </section>
+
+ <!-- About Section -->
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-intro">
+      <h2>Empowering Brands with Eco-Friendly Packaging Excellence</h2>
+      <p>At Kumbhar Enterprise, we don't just create packaging — we engineer solutions. With a relentless commitment to quality, innovation, and sustainability, we help businesses deliver memorable experiences through smart, eco-conscious designs.</p>
+    </div>
+
+    <div class="expertise">
+      <div class="expertise-item">
+        <h3>Innovative Engineering</h3>
+        <p>Our R&D-driven designs optimize durability, functionality, and brand appeal, keeping your business ahead of the curve.</p>
+      </div>
+
+      <div class="expertise-item">
+        <h3>Eco-First Commitment</h3>
+        <p>We prioritize biodegradable, compostable, and recyclable materials to ensure a greener tomorrow without compromising quality.</p>
+      </div>
+
+      <div class="expertise-item">
+        <h3>Precision Manufacturing</h3>
+        <p>State-of-the-art production facilities with strict quality control, ensuring every product delivers performance at scale.</p>
+      </div>
+
+      <div class="expertise-item">
+       <h3>Trusted Partnerships</h3>
+        <p>From startups to global brands, we empower businesses across industries — catering, airlines, railways, bakeries, and delivery networks.</p>
+      </div>
+    </div>
+
+    <!-- <div class="about-cta">
+      <h3>Let’s build a sustainable future together.</h3>
+      <a href="contact.html" class="btn-primary">Get In Touch</a>
+    </div> -->
+  </div>
+</section>
+
+
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      
+      <!-- Product Card 1 -->
+      <div class="product-card" onclick="openModal('product1')">
+        <img src="img/image__1" alt="Meal Pack 500">
+        <h3>Meal Pack 500</h3>
+        <p>Use: Bakeries, Catering, Airlines</p>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card" onclick="openModal('product2')">
+        <img src="img/image_2.webp" alt="Food Box XL">
+        <h3>Food Box XL</h3>
+        <p>Use: Take-home & Delivery Meals</p>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card" onclick="openModal('product3')">
+        <img src="img/image_3" alt="Snack Carrier">
+        <h3>Snack Carrier</h3>
+        <p>Use: Railways, Airlines</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Product Modals -->
+  <div class="modal" id="product1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('product1')">&times;</span>
+      <h2>Meal Pack 500</h2>
+      <p><strong>Specification:</strong> 500ml, BPA-free, Leak-proof</p>
+      <p><strong>Use:</strong> Bakeries, Catering, Airlines</p>
+      <p>Designed for efficient stacking, safety, and freshness for long flights and large events.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="product2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('product2')">&times;</span>
+      <h2>Food Box XL</h2>
+      <p><strong>Specification:</strong> 1000ml, Eco-friendly, Microwave safe</p>
+      <p><strong>Use:</strong> Take-home & Delivery Meals</p>
+      <p>Ideal for heavy, saucy meals. Strong lid-lock system ensures no leakage during deliveries.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="product3">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('product3')">&times;</span>
+      <h2>Snack Carrier</h2>
+      <p><strong>Specification:</strong> 250ml, Ultra-light, Travel friendly</p>
+      <p><strong>Use:</strong> Railways, Airlines</p>
+      <p>Optimized for space-saving and snack servings. Lightweight, easy to handle during transit.</p>
+    </div>
+  </div>
+
+
+  <!-- Contact Section -->
+  <div class="about-container">
+    <div class="about-cta">
+      <h3>Let’s build a sustainable future together.</h3>
+      <a href="contact.html" class="btn-primary">Get In Touch</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Kumbhar Enterprise. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+  <script src="script.js"></script>
+
+</body>
+</html>
